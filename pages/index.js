@@ -1,3 +1,13 @@
+// Import Firebase Analytics conditionally
+if (typeof window !== 'undefined') {
+  import('firebase/analytics').then((analytics) => {
+    const firebaseConfig = {
+      // Your Firebase configuration
+    };
+    analytics.initializeApp(firebaseConfig);
+  });
+}
+
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import {db} from "../firebaseConfig"
