@@ -2,9 +2,6 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import {db} from "../firebaseConfig"
 
-const ClientComponent = dynamic(() => import('../path/to/your/client-side-component'), {
-  ssr: false,
- });
 
 export default function Home() {
   return (
