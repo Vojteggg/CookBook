@@ -1,15 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import firebaseConfig from '../firebaseConfig';
 
-// Conditional import for Firebase Analytics
-if (typeof window !== 'undefined') {
-  import('firebase/analytics').then((analytics) => {
-    const firebaseConfig = {
-      // Your Firebase configuration
-    };
-    analytics.initializeApp(firebaseConfig);
-  });
-}
 
 export default function Home() {
   return (

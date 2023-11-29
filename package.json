@@ -7,9 +7,10 @@
   },
   "dependencies": {
     "@firebase/analytics": "^0.10.0",
-    "firebase": "^10.6.0",
+    "firebase": "^10.7.0",
     "firebase-tools": "^12.9.1",
-    "next": "^14.0.4-canary.2",
+    "next": "^14.0.3",
+    "next-dark-mode": "^3.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
