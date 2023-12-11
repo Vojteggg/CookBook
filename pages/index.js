@@ -48,12 +48,7 @@ export default function Home() {
             <div key = {user.id}>
               <p className='text'>{user.Przepis1.Name}</p>
               <p>{user.Pass}</p>
-              {/* <Image>
-              src={user.Przepis1.url}
-              width={500}
-              height={500}
-              alt="Picture of the author"
-              </Image> */}
+       
               </div>
           ))}
         </div>
