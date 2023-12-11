@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import {getDocs,collection, QuerySnapshot} from 'firebase/firestore'
 import { useEffect, useState } from 'react';
 import { db } from '../firebaseConfig';
+import Image from 'next/image';
 // import firebase from '../firebase/initFirebase'
 
 // firebase();
@@ -44,9 +45,15 @@ export default function Home() {
       
         <div>
           {userData.map((user)=> (
-            <div key = {user.id} className='mb-4'>
-              <p className='text'>{user.Name}</p>
+            <div key = {user.id}>
+              <p className='text'>{user.Przepis1.Name}</p>
               <p>{user.Pass}</p>
+              {/* <Image>
+              src={user.Przepis1.url}
+              width={500}
+              height={500}
+              alt="Picture of the author"
+              </Image> */}
               </div>
           ))}
         </div>
