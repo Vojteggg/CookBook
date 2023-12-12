@@ -10,6 +10,7 @@
     "colors": "^1.4.0",
     "firebase": "^10.7.1",
     "firebase-admin": "^11.11.1",
+    "firebase-frameworks": "^0.11.0-canary.671b1f9",
     "firebase-tools": "^12.9.1",
     "firestore": "^1.1.6",
     "next": "^14.0.4",
